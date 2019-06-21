@@ -93,7 +93,7 @@ import Foundation
                 case let .backgroundColor(value):
                     backgroundColor = value
                 case let .cornerRadius(value):
-                    cornerRadius = value
+                    bs_cornerRadius = value
                 case let .bouncesOnChange(value):
                     bouncesOnChange = value
                 }
@@ -109,7 +109,7 @@ import Foundation
     /// Whether the the control should ignore pan gestures. Defaults to false
     @IBInspectable public var panningDisabled: Bool = false
     /// The control's and indicator's corner radii
-    @IBInspectable public var cornerRadius: CGFloat {
+    @IBInspectable public var bs_cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
